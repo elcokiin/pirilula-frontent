@@ -1,7 +1,8 @@
-import { Link } from 'react-router-dom'
-import '../assets/styles/login.css'
 import PrimaryButton from '../components/PrimaryButton'
-import PrimaryLink from '../components/PrimaryLink';
+import PrimaryLink from '../components/PrimaryLink'
+import SecondaryButton from '../components/SecondaryButton'
+
+import '../assets/styles/login.css'
 
 const Login = () => {
   return (
@@ -35,7 +36,11 @@ const Login = () => {
           />
         </form>
 
-        <Link to="/signup" className="secondary-button signup-button">Sign up</Link>
+        <SecondaryButton 
+          text="Sign Up"
+          to="/signup"
+          className="signup-button"
+        />
       </div>
   </div>
   );
