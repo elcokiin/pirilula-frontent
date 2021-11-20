@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import '../assets/styles/login.css'
-import ButtonPrimary from '../components/ButtonPrimary'
+import PrimaryButton from '../components/PrimaryButton'
+import PrimaryLink from '../components/PrimaryLink';
 
 const Login = () => {
   return (
@@ -24,11 +25,14 @@ const Login = () => {
             placeholder="*********"
             className="input input-password" />
 
-          <ButtonPrimary 
-            message = "Log In"
-            className = "login-button"
+          <PrimaryButton 
+            text="Log In"
+            className="login-button"
           />
-          <Link to="/forget-password" className="principal-link">Forgot my password</Link>
+          <PrimaryLink 
+            text="Forgot your password?"
+            to="/forgot-password"
+          />
         </form>
 
         <Link to="/signup" className="secondary-button signup-button">Sign up</Link>

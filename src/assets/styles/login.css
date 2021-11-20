@@ -13,17 +13,6 @@
   display: flex;
   flex-direction: column;
 }
-.principal-link {
-  color: var(--principal-color);
-  font-size: var(--sm);
-  text-align: center;
-  text-decoration: none;
-  margin-bottom: 52px;
-  transition: .1s ease-in-out;
-}
-.principal-link:hover {
-  color: var(--principal-color-hover);
-}
 .label {
   font-size: var(--sm);
   font-weight: bold;
@@ -54,7 +43,6 @@
   cursor: pointer;
   font-size: var(--md);
   font-weight: bold;
-  text-align: center;
   text-decoration: none;
   transition: .1s ease-in-out;
 }

@@ -1,23 +1,23 @@
 import { Link } from 'react-router-dom'
-import '../assets/styles/buttonPrimary.css'
+import '../assets/styles/primaryButton.css'
 
-const ButtonPrimary = (props) => {
-    const { link, to, message, className } = props;
+const PrimaryButton = (props) => {
+    const { link, to, text, className } = props;
     if (link) {
         return (
             <Link to={to} 
                 className={`primary-button ${className ? className : ""}`}>
-                {message}
+                {text}
             </Link>            
         )
     } else {
         return (
             <button 
                 className={`primary-button ${className ? className : ""}`}>
-                {message}
+                {text}
             </button>
         )
     }
 }
 
-export default ButtonPrimary
+export default PrimaryButton
