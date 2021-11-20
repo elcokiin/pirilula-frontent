@@ -1,0 +1,11 @@
+.form {
+    display: flex;
+    flex-direction: column;
+}
+.input-email {
+    margin-bottom: 22px;
+}
+.login-button {
+    margin-top: 14px;
+    margin-bottom: 30px;
+}

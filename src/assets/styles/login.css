@@ -9,25 +9,6 @@
   grid-template-rows: auto 1fr auto;
   width: 300px;
 }
-.form {
-  display: flex;
-  flex-direction: column;
-}
-.input-email {
-  margin-bottom: 22px;
-}
-.login-button {
-  margin-top: 14px;
-  margin-bottom: 30px;
-}
-.knight-logo {
-  color: var(--white);
-  background-color: #6a79fc;
-  width: 50px;
-  height: 50px;
-  padding: 16px;
-  border-radius: 8px;
-}
 @media (max-width: 640px) {
   .form-container {
     width: 100%;
