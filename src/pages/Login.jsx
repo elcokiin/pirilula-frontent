@@ -1,6 +1,7 @@
 import PrimaryButton from '../components/PrimaryButton'
 import PrimaryLink from '../components/PrimaryLink'
 import SecondaryButton from '../components/SecondaryButton'
+import InputForm from '../components/InputForm'
 
 import '../assets/styles/login.css'
 
@@ -9,23 +10,20 @@ const Login = () => {
     <div className="login">
       <div className="form-container">
         <form action="/" className="form">
-          <label htmlFor="email-username-login" className="label">
-            Email or username address
-          </label>
-          <input
-            type="text"
-            name="email-username" 
-            id="email-username-login"
-            placeholder="pirilula@example.com" 
-            className="input input-email" />
-
-          <label htmlFor="password" className="label">Password</label>
-          <input 
-            type="password"
-            id="password"
-            placeholder="*********"
-            className="input input-password" />
-
+          <InputForm
+            name='email-username'
+            id='email-username-login'
+            placeholder='pirilula@example.com'
+            className='input-email'
+            text = 'Email or username address'
+          />
+          <InputForm 
+            type='password'
+            id='password-login'
+            placeholder='*********'
+            className='input-password'
+            text='Password'
+          />
           <PrimaryButton 
             text="Log In"
             className="login-button"
