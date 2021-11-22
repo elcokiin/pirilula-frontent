@@ -7,13 +7,13 @@ const Login = () => {
       <div className="container-content">
         <FormLogin />
         <SecondaryButton 
-          text="Sign Up"
           to="/signup"
-          className="signup-button"
-        />
+        >
+          Sign Up
+        </SecondaryButton>
       </div>
   </div>
   );
 }
 
-export default Login;
+export default Login

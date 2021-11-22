@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom'
 import '../assets/styles/secondaryLink.css'
 
-const SecondaryLink = ({ to, className, text }) => (
+const SecondaryLink = ({ to, children }) => (
         <Link
             to={to} 
-            className={`secondary-link ${className ? className : ""}`}
+            className="secondary-link"
         >
-            { text }
+            { children }
         </Link>
 )
 

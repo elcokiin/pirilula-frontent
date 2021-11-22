@@ -7,28 +7,28 @@ import '../assets/styles/formLogin.css'
 const FormLogin = () => {
     return(
         <form action="/" className="form">
-          <InputForm
-            name='email-username'
-            id='email-username-login'
-            placeholder='pirilula@example.com'
-            className='input-email'
-            text = 'Email or username address'
-          />
+          <div className="form-login-input-email">
+            <InputForm
+              name='email-username'
+              id='email-username-login'
+              placeholder='pirilula@example.com'
+              label = 'Email or username address'
+            />
+          </div>
           <InputForm 
-            type='password'
-            id='password-login'
-            placeholder='*********'
-            className='input-password'
-            text='Password'
+              type='password'
+              id='password-login'
+              placeholder='*********'
+              label='Password'
           />
-          <PrimaryButton 
-            text="Log In"
-            className="login-button"
-          />
-          <PrimaryLink 
-            text="Forgot your password?"
-            to="/forget-password"
-          />
+          <PrimaryButton>
+            Log In
+          </PrimaryButton>
+          <div className="form-login-link">
+            <PrimaryLink to="/forget-password">
+              Forgot your password?
+            </PrimaryLink>
+          </div>
         </form>
     )
 }

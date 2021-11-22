@@ -3,7 +3,6 @@
     font-size: var(--sm);
     text-align: center;
     text-decoration: none;
-    margin-bottom: 52px;
     transition: .1s ease-in-out;
 }
 .principal-link:hover {

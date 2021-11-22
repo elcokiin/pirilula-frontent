@@ -4,7 +4,6 @@
     text-align: center;
     text-decoration: none;
     transition: .1s ease-in-out;
-    padding: 4px;
 }
 .secondary-link:hover {
     text-decoration: underline;

@@ -2,30 +2,33 @@ import '../assets/styles/emailSendResetPassword.css'
 import imgEmail from "../assets/images/email.svg"
 import PrimaryButton from '../components/PrimaryButton'
 import SecondaryLink from '../components/SecondaryLink'
+import Title from '../components/Title'
+import Subtitle from '../components/Subtitle'
 
 const ForgetPassword = () => {
     return (
         <div class="container">
             <div class="container-content">
-                <h1 class="title">Email has been sent!</h1>
-                <p class="subtitle">Please check your inbox for instructions on how to reset the password</p>
+                <Title>Email has been sent!</Title>
+                <Subtitle>Please check your inbox for instructions on how to reset the password</Subtitle>
 
                 <figure class="email-image">
                     <img src={ imgEmail } alt="email"></img>
                 </figure>
 
-                <PrimaryButton
-                    text="Back to login"
-                    to="/login"
-                    className="forget-password-button"
-                />
+                <div className="email-reset-password-primary-button">
+                    <PrimaryButton to="/login">
+                        Back to login
+                    </PrimaryButton>
+                </div>
 
                 <p class="resend">
                     <span>Didn't receive the email?</span>
-                    <SecondaryLink 
-                        to="#"
-                        text="Resend"
-                    />
+                    <div className="email-send-reset-password-link">
+                        <SecondaryLink to="#">
+                            Resend
+                        </SecondaryLink>
+                    </div>
                 </p>
             </div>
         </div>
