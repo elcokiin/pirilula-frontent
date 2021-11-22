@@ -1,0 +1,11 @@
+.secondary-link {
+    color: var(--color-logo);
+    font-size: var(--md);
+    text-align: center;
+    text-decoration: none;
+    transition: .1s ease-in-out;
+    padding: 4px;
+}
+.secondary-link:hover {
+    text-decoration: underline;
+}

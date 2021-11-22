@@ -27,7 +27,7 @@ const FormLogin = () => {
           />
           <PrimaryLink 
             text="Forgot your password?"
-            to="/forgot-password"
+            to="/forget-password"
           />
         </form>
     )

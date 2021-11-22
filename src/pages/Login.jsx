@@ -1,12 +1,10 @@
 import FormLogin from '../components/FormLogin'
 import SecondaryButton from '../components/SecondaryButton'
 
-import '../assets/styles/login.css'
-
 const Login = () => {
   return (
-    <div className="login">
-      <div className="form-container">
+    <div className="container">
+      <div className="container-content">
         <FormLogin />
         <SecondaryButton 
           text="Sign Up"
